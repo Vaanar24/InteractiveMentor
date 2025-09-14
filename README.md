@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# InteractiveMentor
 
-First, run the development server:
+InteractiveMentor is an experimental platform for building **AI-powered mentors** with real-time interaction.  
+The goal is to create a digital mentor that can guide, teach, and converse naturally with learners using a combination of **3D avatars, speech, and AI models**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- 🧠 **AI Conversations** – Natural conversation powered by LLMs (OpenAI, etc.)
+- 🗣️ **Text-to-Speech (TTS)** – Converts mentor responses into realistic speech
+- 👄 **Lip Sync & Facial Animation** – Matches avatar expressions with speech
+- 🖼️ **3D Interactive Avatar** – Mentor is represented as a digital human using WebGL / Three.js
+- 📚 **Learning Mode** – Supports Q&A and guided lessons
+- ⚡ **Real-time Interaction** – Low-latency communication loop for smooth experience
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
+    1. Clone the repository
+        git clone https://github.com/Vaanar24/InteractiveMentor.git
+        cd InteractiveMentor
+---
+    2. Install dependencies
+        npm install
+--- 
+    3. Set up environment variables
+    Create a .env.local file and configure API keys:
+        OPENAI_API_KEY=your_openai_api_key
+        ELEVENLABS_API_KEY=your_elevenlabs_api_key
+---    
+    4. Run the development server
+        npm run dev
+        Then open http://localhost:3000 in your browser.
+---
 
-## Learn More
+## 🛠️ Tech Stack
+    Next.js: React framework for web app
+    React Three Fiber: 3D rendering
+    OpenAI API: Conversational intelligence
+    ElevenLabs TTS: Realistic text-to-speech
+    TailwindCSS: Styling
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📌 Roadmap
+* Add gesture & emotion system for avatars
+* Multi-language support
+* Persistent mentor memory
+* Lesson templates for different subjects
+* Deploy as a full-stack learning platform
